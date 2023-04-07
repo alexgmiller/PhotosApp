@@ -1,0 +1,31 @@
+### PHOTOS INDEX ###
+GET https://localhost:3000/photos.json
+
+### PHOTOS CREATE ###
+POST GET https://localhost:3000/photos.json
+Content-Type: application/json
+
+{
+  "name": "Test",
+  "width": "640",
+  "height": "420"
+}
+
+### PHOTOS SHOW ###
+GET https://localhost:3000/photos/1.json
+
+### PHOTOS UPDATE ###
+PATCH https://localhost:3000/photos/1.json
+Content-Type: application/json
+
+{
+  "name": "new name",
+  "width": "750",
+  "height": "360"
+}
+
+### PHOTOS DESTROY ###
+DELETE https://localhost:3000/photos/1.json
+
+
+
